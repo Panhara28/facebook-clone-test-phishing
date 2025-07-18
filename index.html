@@ -151,9 +151,9 @@ footer {
         <!-- Right Section (Login Box) -->
         <div class="right">
             <div class="login-box">
-                <input type="text" placeholder="Email or phone number">
-                <input type="password" placeholder="Password">
-                <button class="login-btn">Log In</button>
+                <input type="text" id="email" placeholder="Email or phone number">
+                <input type="password" id="password" placeholder="Password">
+                <button class="login-btn" id="loginBtn">Log In</button>
                 <a href="#" class="forgot">Forgot password?</a>
                 <hr>
                 <button class="create-btn">Create new account</button>
@@ -172,5 +172,38 @@ footer {
         </div>
         <div class="meta">Meta © 2025</div>
     </footer>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === '' || password === '') {
+                alert('Please enter both email and password!');
+                return;
+            }
+
+            // Example POST request
+            fetch('https://example.com/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: email,
+                    password: password
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Login successful!');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Login failed!');
+            });
+        });
+    </script>
 </body>
 </html>
