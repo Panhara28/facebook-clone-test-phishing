@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+.logo {
+    color: #1877f2;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.left p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    padding: 14px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login-btn {
+    background: #1877f2;
+    color: #fff;
+    font-size: 18px;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #166fe5;
+}
+
+.forgot {
+    text-align: center;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+hr {
+    margin: 15px 0;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+}
+
+.create-btn {
+    background: #42b72a;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background: #36a420;
+}
+
+.create-page {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #1c1e21;
+}
+
+.create-page a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1c1e21;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #737373;
+    font-size: 12px;
+}
+
+.footer-links, .footer-bottom {
+    margin: 8px 0;
+}
+
+.meta {
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left">
+            <h1 class="logo">facebook</h1>
+            <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+
+        <!-- Right Section (Login Box) -->
+        <div class="right">
+            <div class="login-box">
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <button class="login-btn">Log In</button>
+                <a href="#" class="forgot">Forgot password?</a>
+                <hr>
+                <button class="create-btn">Create new account</button>
+            </div>
+            <p class="create-page"><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            English (US) · ភាសាខ្មែរ · Français (France) · Tiếng Việt · 中文(简体) · ภาษาไทย · 한국어 · 日本語 · Español · Português (Brasil) · Deutsch
+        </div>
+        <div class="footer-bottom">
+            Sign Up · Log In · Messenger · Facebook Lite · Video · Meta Pay · Meta Store · Meta Quest · Ray-Ban Meta · Meta AI · Instagram · Threads · Privacy Policy · Terms · Help
+        </div>
+        <div class="meta">Meta © 2025</div>
+    </footer>
+</body>
+</html>
